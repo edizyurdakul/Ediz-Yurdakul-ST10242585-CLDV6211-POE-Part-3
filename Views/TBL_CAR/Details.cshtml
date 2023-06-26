@@ -1,0 +1,50 @@
+﻿@model Ediz_Yurdakul_ST10242585_CLDV6211_POE_Part_3.Models.TBL_CAR
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>TBL_CAR</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.KILOMETRES_TRAVELLED)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.KILOMETRES_TRAVELLED)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SERVICE_KILOMETRES)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SERVICE_KILOMETRES)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AVAILABLE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AVAILABLE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TBL_CAR_MODEL.CAR_MODEL)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TBL_CAR_MODEL.CAR_MODEL)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.CAR_NO }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

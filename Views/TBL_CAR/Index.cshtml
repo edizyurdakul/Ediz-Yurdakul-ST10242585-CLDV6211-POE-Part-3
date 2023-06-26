@@ -1,0 +1,51 @@
+﻿@model IEnumerable<Ediz_Yurdakul_ST10242585_CLDV6211_POE_Part_3.Models.TBL_CAR>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.KILOMETRES_TRAVELLED)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SERVICE_KILOMETRES)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AVAILABLE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TBL_CAR_MODEL.CAR_MODEL)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.KILOMETRES_TRAVELLED)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SERVICE_KILOMETRES)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AVAILABLE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TBL_CAR_MODEL.CAR_MODEL)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.CAR_NO }) |
+            @Html.ActionLink("Details", "Details", new { id=item.CAR_NO }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.CAR_NO })
+        </td>
+    </tr>
+}
+
+</table>

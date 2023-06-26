@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="f5fd3bb4959145d2821403d27f1817a6" Name="Diagram1">
+        <EntityTypeShape EntityType="TheRideYouRentModels.TBL_CAR" Width="1.5" PointX="5.25" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TheRideYouRentModels.TBL_CAR_BODY_TYPE" Width="1.5" PointX="0.75" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TheRideYouRentModels.TBL_CAR_MAKE" Width="1.5" PointX="0.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TheRideYouRentModels.TBL_CAR_MODEL" Width="1.5" PointX="3" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TheRideYouRentModels.TBL_DRIVER" Width="1.5" PointX="5.25" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TheRideYouRentModels.TBL_INSPECTOR" Width="1.5" PointX="5.25" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TheRideYouRentModels.TBL_RENTAL" Width="1.5" PointX="7.5" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="TheRideYouRentModels.TBL_RETURN" Width="1.5" PointX="9.75" PointY="1.5" IsExpanded="true" />
+        <AssociationConnector Association="TheRideYouRentModels.FK_CAR" ManuallyRouted="false" />
+        <AssociationConnector Association="TheRideYouRentModels.FK_TBL_CAR_MODEL" ManuallyRouted="false" />
+        <AssociationConnector Association="TheRideYouRentModels.FK_TBL_CARBODYTYPE" ManuallyRouted="false" />
+        <AssociationConnector Association="TheRideYouRentModels.FK_TBL_CARMAKE" ManuallyRouted="false" />
+        <AssociationConnector Association="TheRideYouRentModels.FK_DRIVER" ManuallyRouted="false" />
+        <AssociationConnector Association="TheRideYouRentModels.FK_INSPECTOR" ManuallyRouted="false" />
+        <AssociationConnector Association="TheRideYouRentModels.FK_RENTAL" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
